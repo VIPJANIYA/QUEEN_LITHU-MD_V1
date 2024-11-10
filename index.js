@@ -19,7 +19,7 @@ const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
 
-const ownerNumber = ['94757286833']
+const ownerNumber = ['94740671704']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/session/creds.json')) {
@@ -29,7 +29,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/session/creds.json', data, () => {
-console.log("Session downloaded ✅")
+console.log("Super Session Code downloaded 🧚‍♂️")
 })})}
 
 const express = require("express");
@@ -44,7 +44,7 @@ connectDB();
 const {readEnv} = require('./lib/database')
 const config = await readEnv()
 const prefix = config.PREFIX
-console.log("Connecting QUEEN-CHOOTY-NELUMI-MD bot 🧚‍♂️...");
+console.log("Connecting QUEEN-LITHU-MD bot 💕🙈...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/session/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -64,31 +64,31 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('🧚‍♂️ Installing... ')
+console.log('😾 Installing... ')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('Plugins installed bot successful ✅')
-console.log('QUEEN-CHOOTY-NELUMI-MD connected to whatsapp ✅')
+console.log('Plugins installed lithu md successful ✅')
+console.log('QUEEN-LITHU-MD connected to whatsapp ✅')
 
-let up = `*🌸 QUEEN-CHOOTY-NELUMI-MD 🌸 Connected Successfully!* ✅ 
+let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅ 
 
-🌸 *Welcome to QUEEN-CHOOTY-NELUMI-MD!* 🌸
+ *සාදරයෙන් පිලිගන්නවා 😁👋 🛡️QUEEN-LITHU-MD!* 🛡️
 
 *🔹 PREFIX:* .
 
-*🔹 OWNER:* 947757286833
+*🔹 OWNER:* 94740671704
 
 *🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VagCogPGufJ3kZWjsW3A
 
 *🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com/@SlNethuMax
 
-> *ᴘᴏᴡᴇʀᴅ ʙʏ Qᴜᴇᴇɴ ᴄʜᴏᴏᴛʏ ɴᴇʟᴜᴍɪ ᴍᴅ ᴛᴇᴀᴍ*`;
+> *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://imgur.com/a/1VWhUKf` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://unitedcamps.in/Images/file_5278.jpg` }, caption: up })
 
 }
 })
@@ -104,7 +104,7 @@ await conn.readMessages([mek.key])
 //=========autobio=======//
 if (config.AUTO_BIO === 'true'){
                await
-conn.updateProfileStatus(`🌸 𝐐𝐔𝐄𝐄𝐍 𝐂𝐇𝐎𝐎𝐓𝐘 𝐍𝐄𝐋𝐔𝐌𝐈 𝐌𝐃 🌸 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!`)
+conn.updateProfileStatus(`💖 𝐐𝐔𝐄𝐄𝐍 𝐋𝐈𝐓𝐇𝐔 𝐌𝐃 💖 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!🛡️`)
  }
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
@@ -168,9 +168,9 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
             
-//========OwnerReact========            
+//========OwnerReact========        
          
-if(senderNumber.includes("94757286833")){
+if(senderNumber.includes("94740671704")){
 if(isReact) return
 m.react("👨‍💻")
 }
@@ -222,7 +222,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey,QUEEN-CHOOTY-NELUMI-MD bot started✅");
+res.send("hey,QUEEN-LITHU-MD bot started✅💖");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
