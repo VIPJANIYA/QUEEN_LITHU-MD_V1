@@ -17,7 +17,7 @@ const deta = search.videos[0];
 const url = deta.url 
 
 let desc= `
-🎶 *_QUEEN-LITHUM-MD AUDIO DOWNLOADER_* 🎶
+🎶 *_QUEEN-CHOOTY-NELUMI-MD AUDIO DOWNLOADER_* 🎶
 
 ┌───────────────────
 ├ ℹ️ *Title:* ${deta.title}
@@ -64,7 +64,7 @@ const deta = search.videos[0];
 const url = deta.url 
 
 let desc= `
-📽️ *_QUEEN-LITHUM-MD VIDEO DOWNLOADER_* 📽️
+📽️ *_QUEEN-CHOOTY-NELUMI-MD VIDEO DOWNLOADER_* 📽️
 
 ┌───────────────────
 ├ ℹ️ *Title:* ${deta.title}
@@ -74,7 +74,7 @@ let desc= `
 ├ 📌 *Ago:* ${deta.ago}
 └───────────────────
 
->  *Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ*
+>  *Qᴜᴇᴇɴ ᴄʜᴏᴏᴛʏ ɴᴇʟᴜᴍɪ ᴍᴅ ᴛᴇᴀᴍ*
 `
 
 await conn.sendMessage(from,{image :{ url: deta.thumbnail},caption:desc},{quoted:mek});
@@ -94,3 +94,4 @@ console.log(e)
 reply(`${e}`)
 }
 })
+                    
