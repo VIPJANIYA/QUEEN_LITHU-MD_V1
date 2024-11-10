@@ -88,7 +88,7 @@ let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅
 
 > *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://ibb.co/kHmVLFZ` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://ibb.co/F0ccn0P` }, caption: up })
 
 }
 })
