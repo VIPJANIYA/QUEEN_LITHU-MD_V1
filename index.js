@@ -82,13 +82,13 @@ let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅
 
 *🔹 OWNER:* 94726922553
 
-*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VagCogPGufJ3kZWjsW3A
+*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
 
-*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com/@SlNethuMax
+*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com
 
 > *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://unitedcamps.in/Images/file_5278.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://ibb.co/F0ccn0P` }, caption: up })
 
 }
 })
