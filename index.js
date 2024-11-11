@@ -19,7 +19,7 @@ const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
 
-const ownerNumber = ['94740671704']
+const ownerNumber = ['94726922553']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/session/creds.json')) {
@@ -170,7 +170,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             
 //========OwnerReact========        
          
-if(senderNumber.includes("94740671704")){
+if(senderNumber.includes("94726922553")){
 if(isReact) return
 m.react("👨‍💻")
 }
