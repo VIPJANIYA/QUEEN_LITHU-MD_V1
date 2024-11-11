@@ -19,17 +19,17 @@ const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
 
-const ownerNumber = ['94726922553']
+const ownerNumber = ['94740671704']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/session/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
 const sessdata = config.SESSION_ID
-const filer = File.fromURL(https://mega.nz/file/${sessdata})
+const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/session/creds.json', data, () => {
-console.log("Super Session Code downloaded 🧚‍♂")
+console.log("Super Session Code downloaded 🧚‍♂️")
 })})}
 
 const express = require("express");
@@ -76,19 +76,19 @@ console.log('QUEEN-LITHU-MD connected to whatsapp ✅')
 
 let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅ 
 
- සාදරයෙන් පිලිගන්නවා 😁👋 🛡QUEEN-LITHU-MD! 🛡
+ *සාදරයෙන් පිලිගන්නවා 😁👋 🛡️QUEEN-LITHU-MD!* 🛡️
 
-🔹 PREFIX: .
+*🔹 PREFIX:* .
 
-🔹 OWNER: 94726922553
+*🔹 OWNER:* 94740671704
 
-🖇Join My WhatsApp Channel✓💗 - : https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
+*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VagCogPGufJ3kZWjsW3A
 
-🖇Subscribe My Youtube Channel✓💗 - : https://www.youtube.com
+*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com/@SlNethuMax
 
-> *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
+> *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: https://ibb.co/F0ccn0P }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://unitedcamps.in/Images/file_5278.jpg` }, caption: up })
 
 }
 })
@@ -104,7 +104,7 @@ await conn.readMessages([mek.key])
 //=========autobio=======//
 if (config.AUTO_BIO === 'true'){
                await
-conn.updateProfileStatus(💖 𝐐𝐔𝐄𝐄𝐍 𝐋𝐈𝐓𝐇𝐔 𝐌𝐃 💖 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!🛡)
+conn.updateProfileStatus(`💖 𝐐𝐔𝐄𝐄𝐍 𝐋𝐈𝐓𝐇𝐔 𝐌𝐃 💖 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!🛡️`)
  }
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
@@ -170,7 +170,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             
 //========OwnerReact========        
          
-if(senderNumber.includes("94726922553")){
+if(senderNumber.includes("94740671704")){
 if(isReact) return
 m.react("👨‍💻")
 }
@@ -185,7 +185,7 @@ if (config.AUTO_VOICE === 'false') {
 const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
 let { data } = await axios.get(url)
 for (vr in data){
-if((new RegExp(\\b${vr}\\b,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
+if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
  }}
         
 const events = require('./command')
@@ -224,7 +224,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 app.get("/", (req, res) => {
 res.send("hey,QUEEN-LITHU-MD bot started✅💖");
 });
-app.listen(port, () => console.log(Server listening on port http://localhost:${port}));
+app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
 connectToWA()
-}, 4000);
+}, 4000);  
