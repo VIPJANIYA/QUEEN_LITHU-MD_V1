@@ -18,7 +18,7 @@ let status =`
 ┝ ✨ *Runtime:-  ${runtime(process.uptime())}*    
 ┝ 🎁 *Ram usage:- ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 ┝ 🦕 *Platform:- ${os.hostname()}*
-┝ 🥀 *Owner:- 𝙳𝙰𝚁𝙺 𝚃𝙴𝙲𝙷-𝚇*   
+┝ 🥀 *Owner:- 𝐐𝐔𝐄𝐄𝐍-𝐋𝐈𝐓𝐇𝐔-𝐌𝐃*   
 └───────────────────◉▷`
 return reply(`${status}`)
 }catch(e){
