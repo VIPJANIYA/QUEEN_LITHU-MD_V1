@@ -46,5 +46,5 @@ reply(e)
 }
 })
 
-// FOLLOW US : https://whatsapp.com/channel/0029VaaPfFK7Noa8nI8zGg27
+// FOLLOW US : https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
     
