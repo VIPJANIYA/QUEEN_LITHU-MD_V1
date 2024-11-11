@@ -28,17 +28,17 @@ let madeMenu = `╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
      
 ╰━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━
-      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ ғᴜʟʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ Qᴜᴇᴇɴ-ʟɪᴛʜᴜ-ᴍᴅ ғᴜʟʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ ᴛᴇᴄʜ-x👨🏻‍💻*
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ʟɪᴛʜᴜᴍ👨🏻‍💻*
 
 *┌─〈 ✦🅳ᴀʀᴋ-🅳ᴇᴡ-🅼ᴅ✦ 〉─◆*
 *│╭─────────────···▸*
 *┴│▸*
 *❖│▸* *ʀᴜɴᴛɪᴍᴇ* : ${runtime(process.uptime())}
 *❖│▸* *ʀᴀᴍ ᴜsᴇ* : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-*❖│▸* *ɴᴀᴍᴇ ʙᴏᴛ* : *❖ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ❖*
+*❖│▸* *ɴᴀᴍᴇ ʙᴏᴛ* : *❖Qᴜᴇᴇɴ-ʟɪᴛʜᴜ-ᴍᴅ❖*
 *❖│▸* *ᴠᴇʀsɪᴏɴs* : *ᴠ.1.0.0*
 *❖│▸* *ᴍᴇɴᴜ ᴄᴍᴅ* : *ᴍᴇɴᴜ ʟɪsᴛ*
 *┬│▸*
@@ -77,7 +77,7 @@ let madeMenu = `╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
 
 *❒⁠⁠⁠⁠▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭❒*⁠⁠⁠⁠
 
-> *POWERED BY DARK TECH-X*
+> *POWERED BY QUEEN-LITHU-MD*
 ╘✦•·········•••••••••············•✦ 
 `
 
@@ -89,15 +89,15 @@ await conn.sendMessage(from, { text: madeMenu ,
     isForwarded: false,
     forwardedNewsletterMessageInfo: {
       newsletterJid: '120363232588171807@newsletter',
-      newsletterName: "DARK-DEW-MD",
+      newsletterName: "QUEEN-LITHU-MD",
       serverMessageId: 999
     },
 externalAdReply: { 
-title: '◀︎DARK-DEW-MD MENU▶︎',
+title: '◀︎QUEEN-LITHU-MD MENU▶︎',
 body: `${pushname}`,
 mediaType: 1,
-sourceUrl: "https://whatsapp.com/channel/0029VaotlU03rZZamIglB52e" ,
-thumbnailUrl: "https://iili.io/2BbeWGa.jpg" ,
+sourceUrl: "https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d" ,
+thumbnailUrl: "https://unitedcamps.in/Images/file_5278.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
