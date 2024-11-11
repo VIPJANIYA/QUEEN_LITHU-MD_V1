@@ -8,44 +8,57 @@ fetchLatestBaileysVersion,
 Browsers
 } = require('@whiskeysockets/baileys')
 
+
+const l = console.log
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
 const fs = require('fs')
-const l = console.log
+const ff = require('fluent-ffmpeg')
 const P = require('pino')
 const config = require('./config')
 const qrcode = require('qrcode-terminal')
+const StickersTypes = require('wa-sticker-formatter')
 const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
+const { fromBuffer } = require('file-type')
+const bodyparser = require('body-parser')
+const mongoose = require('mongoose')
+const { tmpdir } = require('os')
+const Crypto = require('crypto')
+const path = require('path')
 
-const ownerNumber = ['94726922553']
+const ownerNumber = ['94764984597']
 
 //===================SESSION-AUTH============================
-if (!fs.existsSync(__dirname + '/session/creds.json')) {
+if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
 const sessdata = config.SESSION_ID
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
-fs.writeFile(__dirname + '/session/creds.json', data, () => {
-console.log("Super Session Code downloaded 🧚‍♂️")
+fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
+console.log("Session downloaded ✅")
 })})}
 
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 9090;
 
 //=============================================
 
 async function connectToWA() {
+//===================connect mongodb===================
 const connectDB = require('./lib/mongodb')
 connectDB();
+//==================================
 const {readEnv} = require('./lib/database')
-const config = await readEnv()
-const prefix = config.PREFIX
-console.log("Connecting QUEEN-LITHU-MD bot 💕🙈...");
-const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/session/')
+const config = await readEnv();
+const prefix = ('.')
+//=================================
+        
+console.log("ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ ʙᴏᴛ 🧬...");
+const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
 const conn = makeWASocket({
@@ -64,31 +77,31 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('😾 Installing... ')
+console.log('😼 ɪɴsᴛᴀʟʟɪɴɢ ᴘʟᴜɢɪɴs ғɪʟᴇs ᴘʟᴢ ᴡᴀɪᴛ... ')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('Plugins installed lithu md successful ✅')
-console.log('QUEEN-LITHU-MD connected to whatsapp ✅')
+console.log('ᴘʟᴜɢɪɴs ɪɴsᴛᴀʟʟᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ✅')
+console.log('ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴡʜᴀᴛsᴀᴘᴘ ✅')
 
-let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅ 
+let up = `> *ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ ᴛᴇᴄʜ-x✅*
 
- *සාදරයෙන් පිලිගන්නවා 😁👋 🛡️QUEEN-LITHU-MD!* 🛡️
+> *❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ❁*
 
-*🔹 PREFIX:* .
+*https://whatsapp.com/channel/0029VaotlU03rZZamIglB52e*
 
-*🔹 OWNER:* 94726922553
+╭⊱✫🔮 DARK-DEW-MD 🔮✫⊱╮
+│✫➠ - *📂REPOSITORY NAME:* DARK-DEW-MD
+│✫➠ - *📃DESCRIPTION:* ❁ᴡᴏʀʟᴅ ʙᴇsᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ❁
+│✫➠ - *🛡️OWNER:* ᴅᴀʀᴋ ᴛᴇᴄʜ-x
+│✫➠ - *🌐 URL:* https://github.com/DarkTech-x
+╰━━━━━━━━━━━━━━━━━╯
 
-*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
-
-*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com
-
-> *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
-
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://ibb.co/F0ccn0P` }, caption: up })
+*YOUR BOT ACTIVE NOW ENJOY♥️🪄*\n\nPREFIX: ${prefix}`;
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://iili.io/2BbvpYx.jpg` }, caption: up })
 
 }
 })
@@ -101,11 +114,6 @@ mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message
 if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true"){
 await conn.readMessages([mek.key])
 }
-//=========autobio=======//
-if (config.AUTO_BIO === 'true'){
-               await
-conn.updateProfileStatus(`💖 𝐐𝐔𝐄𝐄𝐍 𝐋𝐈𝐓𝐇𝐔 𝐌𝐃 💖 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!🛡️`)
- }
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
 const content = JSON.stringify(mek.message)
@@ -134,18 +142,7 @@ const isReact = m.message.reactionMessage ? true : false
 const reply = (teks) => {
 conn.sendMessage(from, { text: teks }, { quoted: mek })
 }
-
-conn.edit = async (mek, newmg) => {
-                await conn.relayMessage(from, {
-                    protocolMessage: {
-                        key: mek.key,
-                        type: 14,
-                        editedMessage: {
-                            conversation: newmg
-                        }
-                    }
-                }, {})
-}
+        
 conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               let mime = '';
               let res = await axios.head(url)
@@ -167,26 +164,26 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-            
-//========OwnerReact========        
-         
-if(senderNumber.includes("94726922553")){
+
+//================ownerreact
+if(senderNumber.includes("94764984597")){
 if(isReact) return
 m.react("👨‍💻")
 }
-//=====Auto-Read-Cmd==========
-if (isCmd && config.AUTO_READ_CMD === "true") {
-              await conn.readMessages([mek.key])  // Mark command as read
-}
-//Auto-StatusDL============== 
+//==========================public react
+
+//============================        
         
-//=====================✓
-if (config.AUTO_VOICE === 'false') {
-const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
-let { data } = await axios.get(url)
-for (vr in data){
-if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
- }}
+//=================================WORKTYPE=========================================== 
+if(!isOwner && config.MODE === "private") return
+if(!isOwner && isGroup && config.MODE === "inbox") return
+if(!isOwner && isGroup && config.MODE === "groups") return
+//======================================================
+
+
+
+
+
         
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
@@ -222,9 +219,9 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey,QUEEN-LITHU-MD bot started✅💖");
+res.send("HEY, DARK-DEW-MD STARTED ✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
 connectToWA()
-}, 4000);  
+}, 4000);
