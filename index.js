@@ -174,12 +174,6 @@ if(senderNumber.includes("94740671704")){
 if(isReact) return
 m.react("👨‍💻")
 }
-
-if(!isOwner && config.MODE === "private") return
-if(!isOwner && isGroup && config.MODE === "inbox") return
-if(!isOwner && isGroup && config.MODE === "groups") return
-
-        
 //=====Auto-Read-Cmd==========
 if (isCmd && config.AUTO_READ_CMD === "true") {
               await conn.readMessages([mek.key])  // Mark command as read
