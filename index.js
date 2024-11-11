@@ -34,7 +34,7 @@ const ownerNumber = ['94764984597']
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
 const sessdata = config.SESSION_ID
-const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
+const filer = File.fromURL(https://mega.nz/file/${sessdata})
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
@@ -87,21 +87,21 @@ require("./plugins/" + plugin);
 console.log('ᴘʟᴜɢɪɴs ɪɴsᴛᴀʟʟᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ✅')
 console.log('ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴡʜᴀᴛsᴀᴘᴘ ✅')
 
-let up = `> *ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ ᴛᴇᴄʜ-x✅*
+let up = `> ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ ᴛᴇᴄʜ-x✅
 
-> *❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ❁*
+> ❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs ᴅᴀʀᴋ-ᴅᴇᴡ-ᴍᴅ❁
 
-*https://whatsapp.com/channel/0029VaotlU03rZZamIglB52e*
+https://whatsapp.com/channel/0029VaotlU03rZZamIglB52e
 
 ╭⊱✫🔮 DARK-DEW-MD 🔮✫⊱╮
-│✫➠ - *📂REPOSITORY NAME:* DARK-DEW-MD
-│✫➠ - *📃DESCRIPTION:* ❁ᴡᴏʀʟᴅ ʙᴇsᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ❁
-│✫➠ - *🛡️OWNER:* ᴅᴀʀᴋ ᴛᴇᴄʜ-x
-│✫➠ - *🌐 URL:* https://github.com/DarkTech-x
+│✫➠ - 📂REPOSITORY NAME: DARK-DEW-MD
+│✫➠ - 📃DESCRIPTION: ❁ᴡᴏʀʟᴅ ʙᴇsᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ❁
+│✫➠ - 🛡OWNER: ᴅᴀʀᴋ ᴛᴇᴄʜ-x
+│✫➠ - 🌐 URL: https://github.com/DarkTech-x
 ╰━━━━━━━━━━━━━━━━━╯
 
-*YOUR BOT ACTIVE NOW ENJOY♥️🪄*\n\nPREFIX: ${prefix}`;
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://iili.io/2BbvpYx.jpg` }, caption: up })
+YOUR BOT ACTIVE NOW ENJOY♥🪄\n\nPREFIX: ${prefix}`;
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: https://iili.io/2BbvpYx.jpg }, caption: up })
 
 }
 })
@@ -221,7 +221,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 app.get("/", (req, res) => {
 res.send("HEY, DARK-DEW-MD STARTED ✅");
 });
-app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
+app.listen(port, () => console.log(Server listening on port http://localhost:${port}));
 setTimeout(() => {
 connectToWA()
 }, 4000);
