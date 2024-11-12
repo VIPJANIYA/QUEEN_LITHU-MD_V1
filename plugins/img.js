@@ -41,7 +41,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 caption: `
 🌟 *Image ${i + 1} from your search!* 🌟
         *Enjoy these images! 📸*
-*©Qᴜᴇᴇɴ ISHU-MD BY LAKSIDUッ*
+*©Qᴜᴇᴇɴ LITHU-MD ッ*
 `
 }, { quoted: mek });
 }
