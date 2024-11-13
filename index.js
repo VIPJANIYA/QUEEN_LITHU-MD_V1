@@ -82,9 +82,9 @@ let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅
 
 *🔹 OWNER:* 94740671704
 
-*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VagCogPGufJ3kZWjsW3A
+*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
 
-*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com/@SlNethuMax
+*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com
 
 > *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
 
