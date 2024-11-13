@@ -80,7 +80,7 @@ let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅
 
 *🔹 PREFIX:* .
 
-*🔹 OWNER:* 94740671704
+*🔹 OWNER:* 94726922553
 
 *🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
 
