@@ -181,7 +181,7 @@ if (isCmd && config.AUTO_READ_CMD === "true") {
 //Auto-StatusDL============== 
         
 //=====================✓
-if (config.AUTO_VOICE === 'false') {
+if (config.AUTO_VOICE === 'true') {
 const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
 let { data } = await axios.get(url)
 for (vr in data){
