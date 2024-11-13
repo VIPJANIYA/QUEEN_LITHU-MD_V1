@@ -21,7 +21,7 @@ if(!q) return await reply("Please give me mediafire url");
   
 const mfire = await fetchJson(`${apilink}/download/mfire?url=${q}`);
   
-const msg = `🎐 *𝚀𝚄𝙴𝙴𝙽 𝙳𝙴𝚆-𝙼𝙳 𝙼𝙴𝙳𝙸𝙰𝙵𝙸𝙻𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 🎐
+const msg = `🎐 *𝚀𝚄𝙴𝙴𝙽 ʟɪᴛʜᴜ-𝙼𝙳 𝙼𝙴𝙳𝙸𝙰𝙵𝙸𝙻𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 🎐
 
 *┌───────────◉▸▷*
 *│ File Name* - ${mfire.result.fileName}
@@ -29,7 +29,7 @@ const msg = `🎐 *𝚀𝚄𝙴𝙴𝙽 𝙳𝙴𝚆-𝙼𝙳 𝙼𝙴𝙳𝙸�
 *│ Upload Date and Time* - ${mfire.result.date}
 *└───────────◉▸▷*
 
-*𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚀𝚄𝙴𝙴𝙽-𝙳𝙴𝚆-𝙼𝙳*`
+*𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚀𝚄𝙴𝙴𝙽-ʟɪᴛʜᴜ-𝙼𝙳*`
   
 await conn.sendMessage( from, { image: { url: 'https://i.ibb.co/dPw1fHD/mfire.jpg' }, caption: msg }, { quoted: mek });
 
