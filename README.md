@@ -39,7 +39,7 @@ FOLLOW ON WA CHANEL 👇
 
 WHATSAPP GROUP 👇
 
-- **.().**: Youtube Chanel 🌟
+- **.(https://chat.whatsapp.com/IGQM42nb6N6Fj7GfNnOyRy).**: Youtube Chanel 🌟
 
 CONTACT ON OWNER 👇
 
