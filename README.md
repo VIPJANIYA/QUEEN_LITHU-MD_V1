@@ -29,7 +29,7 @@ You can see the Paire Code at [PAIR CODE](https://lithu-md-fair-web-6f8813b33b65
 
 You can deploy this application on various platforms. Here are some options:
 
-- **[Heroku]([https://www.heroku.com/](https://dashboard.heroku.com/new?template=https://github.com/LithumHelitha/QUEEN-LITHU-MD-v1/tree/main))**: A cloud platform that lets you build, deliver, monitor, and scale apps.
+- **[Heroku](https://dashboard.heroku.com/new?template=https://github.com/LithumHelitha/QUEEN-LITHU-MD-v1/tree/main)**: A cloud platform that lets you build, deliver, monitor, and scale apps.
 
 ## QUEEN-LITHU-MD BOT SUPPORT
 
