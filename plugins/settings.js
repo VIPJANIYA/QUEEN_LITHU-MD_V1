@@ -14,7 +14,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let desc = `┏━━━━━━━━━━━━━━━━━━━━━━━┓
-┃       ⚙ SAHAS MD BOT SETTINGS ⚙
+┃       ⚙ QUEEN LITHU MD BOT SETTINGS ⚙
 ┃━━━━━━━━━━━━━━━━━━━━━━━┃
 ┣━💼 Work Mode : 𝙿𝚄𝙱𝙻𝙸𝙲🌎/𝙿𝚁𝙸𝚅𝙰𝚃𝙴/𝙸𝙽𝙱𝙾𝚇/𝙶𝚁𝙾𝚄𝙿
 ┣━🔊 Auto Voice : ♻ 𝙾𝙽/𝙾𝙵𝙵
@@ -61,7 +61,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃   ┗ 7.2 🖊❌ Deactivate Auto Command Read
 ┗━━━━━━━━━━━━━━━━━━━━━━━┛
 
-> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*`;
+> *©ᴘᴏᴡᴇʀᴇᴅ Qᴜᴇᴇɴ-ʟɪᴛʜᴜ-ᴍᴅ*`;
 
         const vv = await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/de82e3.jpg"}, caption: desc }, { quoted: mek });
 
