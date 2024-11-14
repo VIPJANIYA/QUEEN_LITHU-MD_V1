@@ -23,7 +23,7 @@
 
 ## PAIR SITE
 
-You can see the Paire Code at [PAIR CODE](https://pair-web-public.koyeb.app/).
+You can see the Paire Code at [PAIR CODE](https://lithu-md-fair-web-6f8813b33b65.herokuapp.com/).
 
 ## Deployment
 
