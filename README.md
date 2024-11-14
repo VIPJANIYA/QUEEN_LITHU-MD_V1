@@ -29,18 +29,15 @@ You can see the Paire Code at [PAIR CODE](https://lithu-md-fair-web-6f8813b33b65
 
 You can deploy this application on various platforms. Here are some options:
 
-- **[Replit](https://replit.com/)**: An easy way to deploy and collaborate on code.
-- **[Heroku](https://www.heroku.com/)**: A cloud platform that lets you build, deliver, monitor, and scale apps.
-- **[Koyeb](https://www.koyeb.com/)**: A modern cloud platform to deploy and manage your applications.
-- **[Render](https://render.com/)**: Provides a simple, fast, and reliable way to deploy and manage applications.
+- **[Heroku]([https://www.heroku.com/](https://dashboard.heroku.com/new?template=https://github.com/LithumHelitha/QUEEN-LITHU-MD-v1/tree/main))**: A cloud platform that lets you build, deliver, monitor, and scale apps.
 
-## DENUWAN-MD BOT SUPPORT
+## QUEEN-LITHU-MD BOT SUPPORT
 
 FOLLOW ON WA CHANEL 👇
 
 - **.(https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d).**: Whatsapp Chanel 🌟
 
-SUBSCRIBE ON YT CHANEL 👇
+WHATSAPP GROUP 👇
 
 - **.().**: Youtube Chanel 🌟
 
