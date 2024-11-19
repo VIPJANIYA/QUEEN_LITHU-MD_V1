@@ -1,6 +1,6 @@
    ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=CREATED+BY+ASH)
  
-<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100">
 
 
 ![Background Image](https://i.ibb.co/myW7D5f/2df27fbd1a812920.jpg)
