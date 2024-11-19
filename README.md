@@ -40,7 +40,7 @@ You can deploy this application on various platforms. Here are some options:
 
 FOLLOW ON WA CHANEL 👇
 
-- **.(https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d).**: Whatsapp Chanel 🌟
+- **.(https://whatsapp.com/channel/0029VapKsJeKmCPQ53eTsF1E.**: Whatsapp Chanel 🌟
 
 WHATSAPP GROUP 👇
 
@@ -50,4 +50,4 @@ CONTACT ON OWNER 👇
 
 - **.(94726645160).**: Owner Number 🌟
 
-```THE BOT MADE BY OLD KING LOKU ASH```
+```THE BOT CREATED BY OLD KING LOKU ASH```
