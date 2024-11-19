@@ -179,7 +179,7 @@ async (conn, mek, m, { from, quoted, body, q, reply }) => {
     const isAdmin = m.participant === mek.from;
 
     if (!isAdmin) {
-        return reply("Only owner can add premium groups.\nContact Owner +94726922553");
+        return reply("Only owner can add premium groups.\nContact Owner +94726645160");
     }
 
     if (!premiumGroups.includes(from)) {
