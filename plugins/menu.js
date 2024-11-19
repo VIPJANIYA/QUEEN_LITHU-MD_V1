@@ -102,7 +102,7 @@ title: '◀︎QUEEN-LITHU-MD MENU▶︎',
 body: `${pushname}`,
 mediaType: 1,
 sourceUrl: "https://whatsapp.com/channel/0029VapKsJeKmCPQ53eTsF1E" ,
-thumbnailUrl: "https://unitedcamps.in/Images/file_5278.jpg" ,
+thumbnailUrl: "https://i.ibb.co/myW7D5f/2df27fbd1a812920.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
