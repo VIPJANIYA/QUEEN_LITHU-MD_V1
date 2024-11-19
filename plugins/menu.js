@@ -31,9 +31,9 @@ let madeMenu = `╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
       *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ Qᴜᴇᴇɴ-ʟɪᴛʜᴜ-ᴍᴅ ғᴜʟʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ʟɪᴛʜᴜᴍ👨🏻‍💻*
+*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ʟɪᴛʜᴜᴍ 👸*
 
-*┌─〈 ✦🆀𝐔𝐄𝐄𝐍-🅻𝐈𝐓𝐇𝐔-🅼𝐃✦ 〉─◆*
+*┌─〈 ✦𝗤𝗨𝗘𝗘𝗡-𝗟𝗜𝗧𝗛𝗨-𝗠𝗗-𝗩1✦ 〉─◆*
 *│╭─────────────···▸*
 *┴│▸*
 *❖│▸* *ʀᴜɴᴛɪᴍᴇ* : ${runtime(process.uptime())}
@@ -101,7 +101,7 @@ externalAdReply: {
 title: '◀︎QUEEN-LITHU-MD MENU▶︎',
 body: `${pushname}`,
 mediaType: 1,
-sourceUrl: "https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d" ,
+sourceUrl: "https://whatsapp.com/channel/0029VapKsJeKmCPQ53eTsF1E" ,
 thumbnailUrl: "https://unitedcamps.in/Images/file_5278.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
