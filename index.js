@@ -19,7 +19,7 @@ const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
 
-const ownerNumber = ['94726922553']
+const ownerNumber = ['94726645160']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/session/creds.json')) {
@@ -29,7 +29,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/session/creds.json', data, () => {
-console.log("Super Session Code downloaded 🧚‍♂️")
+console.log("Session code Checking 👨‍🏫")
 })})}
 
 const express = require("express");
@@ -44,7 +44,7 @@ connectDB();
 const {readEnv} = require('./lib/database')
 const config = await readEnv()
 const prefix = config.PREFIX
-console.log("Connecting QUEEN-LITHU-MD bot 💕🙈...");
+console.log("Connecting QUEEN-LITHU-MD bot 👸...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/session/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -76,17 +76,17 @@ console.log('QUEEN-LITHU-MD connected to whatsapp ✅')
 
 let up = `*👋 QUEEN-LITHU-MD ⇨⇨ Connected Successfully!!!!!!* ✅ 
 
- *සාදරයෙන් පිලිගන්නවා 😁👋 🛡️QUEEN-LITHU-MD!* 🛡️
+ *සාදරයෙන් පිලිගන්නවා 😌👋 🛡️QUEEN-LITHU-MD!* 🛡️
 
 *🔹 PREFIX:* .
 
-*🔹 OWNER:* 94726922553
+*🔹 OWNER:* 94726645160
 
-*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
+*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VapKsJeKmCPQ53eTsF1E
 
 *🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com
 
-> *ᴘᴏᴡᴇʀ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
+> *Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ ᴘᴏᴡʀᴅ ʙʏ ʟᴏᴋᴜ ᴀꜱʜ*`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://unitedcamps.in/Images/file_5278.jpg` }, caption: up })
 
@@ -104,7 +104,7 @@ await conn.readMessages([mek.key])
 //=========autobio=======//
 if (config.AUTO_BIO === 'true'){
                await
-conn.updateProfileStatus(`💖 𝐐𝐔𝐄𝐄𝐍 𝐋𝐈𝐓𝐇𝐔 𝐌𝐃 💖 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!🛡️`)
+conn.updateProfileStatus(`👸 𝐐𝐔𝐄𝐄𝐍 𝐋𝐈𝐓𝐇𝐔 𝐌𝐃 𝗩➊ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!✅`)
  }
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
@@ -170,7 +170,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             
 //========OwnerReact========        
          
-if(senderNumber.includes("94726922553")){
+if(senderNumber.includes("94726645160")){
 if(isReact) return
 m.react("🦋")
 }
