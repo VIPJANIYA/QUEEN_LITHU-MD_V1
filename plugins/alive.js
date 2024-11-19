@@ -26,7 +26,7 @@ let des = `*👋 Hello ${pushname}*
 *╰───────────────◎◎▷*
  *➣ ʏᴏᴜᴛᴜʙᴇ⚡*= https://www.youtube.com
 
-*➣ ᴡʜᴀᴛꜱᴀᴘᴘ ᴄʜᴀɴɴᴇʟ⚡* = https://whatsapp.com/channel/0029VasctJ90LKZDfJ4JZp2d
+*➣ ᴡʜᴀᴛꜱᴀᴘᴘ ᴄʜᴀɴɴᴇʟ⚡* = https://whatsapp.com/channel/0029VapKsJeKmCPQ53eTsF1E
 
 *©ᴘᴏᴡᴇʀᴅ ʙʏ Qᴜᴇᴇɴ ʟɪᴛʜᴜ ᴍᴅ*`
 await conn.sendMessage(from, { audio: { url: voice.alive }, mimetype: 'audio/mp3', ptt: true }, { quoted: mek })
